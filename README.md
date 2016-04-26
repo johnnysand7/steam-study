@@ -1,5 +1,8 @@
 # Steam User Study
 
+### Essential Workflow Image:
+![img](/images/flow.png)
+
 ### Data Collection
 * Python class to collect 17-digit user IDs from my friends,  
 then their friends, and so on, using the Steam GetFriendList API  
@@ -87,7 +90,7 @@ in my next model. For now, below is a summary of its current form.
 * Very sparse profile summaries and information
 
 ## Further Ideas
-* Tracking game genres over time
+* Tracking game genres over timep
 * Favorite genres by country
 * Average user playtime by location
 * Average profile length by location
