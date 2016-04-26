@@ -85,12 +85,16 @@ in my next model. For now, below is a summary of its current form.
 
 ## Limitations
 * Including total 8,000 games resulted in 14.2 million user-game pairs
-  * Summed up total playtimes by each user for each game, took the average, and included only games with playtimes above the average, reducing the number from 8,000 to 526. Since I am  
-  trying to connect users, this felt appropriate.
+  * Summed up total playtimes by each user for each game, took  
+  the average, and included only games with playtimes above  
+  that, reducing the number from 8,000 to 526, while only   
+  reducing the user-game pairs to 7.09 million. Since I am  
+  trying to connect users (rather than recommend games),  
+  this felt appropriate.
 * Very sparse profile summaries and information
 
 ## Further Ideas
-* Tracking game genres over timep
+* Tracking game genres over time
 * Favorite genres by country
 * Average user playtime by location
 * Average profile length by location
