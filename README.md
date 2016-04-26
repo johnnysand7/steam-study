@@ -1,4 +1,4 @@
-# Steam User Study
+# Steam User Recommender 
 
 ### Essential Workflow Image:
 ![img](/images/flow.png)
