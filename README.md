@@ -95,7 +95,9 @@ in my next model. For now, below is a summary of its current form.
 * Current model only works for the 150k people already collected.  
 * Current genres pulled from the store are pretty vague. I  
 would like to try some text processing on the community  
-given tags, factoring in the order of the tag.
+given tags, factoring in the order of the tag. See below:  
+
+![genres_countries](images/genres_countries2.png)
 
 ## Further Ideas
 * Tracking game genres over time
@@ -105,3 +107,6 @@ given tags, factoring in the order of the tag.
 * The current app works with people already in the model, which is very  
 limited. However, it demonstrates how an idea like this could / would work:  
 copy your profile URL, and get links to similar players.
+
+## Explicit Ratings
+I wanted to really emphasize 
