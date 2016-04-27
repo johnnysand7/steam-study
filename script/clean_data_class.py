@@ -8,7 +8,8 @@ class CleanData(object):
     """
 
     def __init__(self, df):
-        self.df = df[(df.friends != "private") & (df.game_info != "empty")].reset_index()
+        self.df = df[(df.friends != "private") & (df.game_info != "empty")]\
+                    .reset_index()
         del self.df["_id"]
         del self.df["index"]
 
@@ -16,8 +17,9 @@ class CleanData(object):
         """
         Remove unused columns
         """
-        del_columns = set(["gameextrainfo", "gameid", "gameserverip", "gameserversteamid",\
-                           "lobbysteamid", "loccityid", "ban_status", "user_info"])
+        del_columns = set(["gameextrainfo", "gameid", "gameserverip",
+                           "gameserversteamid", "lobbysteamid", "loccityid",
+                           "ban_status", "user_info"])
         for col in del_columns:
             try:
                 del self.df[col]
@@ -73,13 +75,12 @@ class CleanData(object):
         """
         Merge dataframes on the "steamid" column
         """
-        self.df = pd.merge(self.df, new_df,\
-                       on='steamid')
+        self.df = pd.merge(self.df, new_df,
+                           on='steamid')
 
     def build_df(self):
         """
-        Call the above functions to build the
-        world's most average dataframe
+        Call the above functions to build one dataframe
         """
         ban_status = self.ban_status_df()
         self.merge_dfs(ban_status)
