@@ -78,10 +78,10 @@ in my next model. For now, below is a summary of its current form.
   * Rating: Scaled playtime in minutes to explicit 0-5 rating
     * 0: 0min
     * 1: 1min - 60min
-    * 2: 61min - 120min
-    * 3: 121min - 600min
-    * 4: 601min - 1200min
-    * 5: Over 1201min
+    * 2: 61min - 180min
+    * 3: 181min - 420min
+    * 4: 421min - 900min
+    * 5: Over 901min
 
 ## Limitations
 * Including total 8,000 games resulted in 14.2 million user-game pairs
@@ -92,6 +92,10 @@ in my next model. For now, below is a summary of its current form.
   trying to connect users (rather than recommend games),  
   this felt appropriate.
 * Very sparse profile summaries and information
+* Current model only works for the 150k people already collected.  
+* Current genres pulled from the store are pretty vague. I  
+would like to try some text processing on the community  
+given tags, factoring in the order of the tag.
 
 ## Further Ideas
 * Tracking game genres over time
