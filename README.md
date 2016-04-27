@@ -93,11 +93,14 @@ in my next model. For now, below is a summary of its current form.
   this felt appropriate.
 * Very sparse profile summaries and information
 * Current model only works for the 150k people already collected.  
-* Current genres pulled from the store are pretty vague. I  
-would like to try some text processing on the community  
-given tags, factoring in the order of the tag. See below:  
+* Current genres pulled from the store are pretty vague and  
+too general. See below:  
 
 ![genres_countries](images/genres_countries2.png)
+* I would like to use the community-chosen tags to created  
+better defined genres, factoring the order of the tags.  
+Currently, games like CS:GO and BattleBlock Theater are under  
+"Action."
 
 ## Further Ideas
 * Tracking game genres over time
@@ -109,4 +112,4 @@ limited. However, it demonstrates how an idea like this could / would work:
 copy your profile URL, and get links to similar players.
 
 ## Explicit Ratings
-I wanted to really emphasize 
+I wanted to really emphasize
