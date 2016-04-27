@@ -1,4 +1,4 @@
-# Steam User Recommender 
+# Steam User Recommender
 
 ### Essential Workflow Image:
 ![img](/images/flow.png)
@@ -98,3 +98,6 @@ in my next model. For now, below is a summary of its current form.
 * Favorite genres by country
 * Average user playtime by location
 * Average profile length by location
+* The current app works with people already in the model, which is very  
+limited. However, it demonstrates how an idea like this could / would work:  
+copy your profile URL, and get links to similar players.
