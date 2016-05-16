@@ -4,7 +4,6 @@ The initial idea for this project stemmed from trying online dating for the firs
 ## Data Collection  
 
 ![img](/images/flow.png)  
-
 <sup> [I] General workflow image </sup>  
 
 * Python class to collect 17-digit user IDs from my friends,  
@@ -88,20 +87,13 @@ in my next model. For now, below is a summary of its current form.
     * 4: 421min - 900min
     * 5: Over 901min
 
-To get an idea of how my explicit playtime to rating compared  
-to some actual ratings, I collected meta critic and community   
-ratings for each game. I then ordered by my rating to get a  
-rough idea of what this looks like.  
+To get an idea of how my explicit playtime to rating compared to some actual ratings, I collected meta critic and community ratings for each game. I then ordered by my rating to get a rough idea of what this looks like.  
 
 ![ratings](images/ratings.png)  
-
 <sup> [II] Playtime rating is the clean curve. Looks like it does not match up too well...</sup>  
-To get a better idea of where some issues might be, I grouped  
-games by genre (the genre tag they are posted in the store  
-under) and averaged the reviews.  
+To get a better idea of where some issues might be, I grouped games by genre (the genre tag they are posted in the store under) and averaged the reviews.  
 
 ![genres](images/genres.png)  
-
 <sup> [III] Comparing the community, playtime, and Metacritic ratings by genre for the top 526 games</sup>  
 
 ## Limitations
