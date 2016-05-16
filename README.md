@@ -95,6 +95,11 @@ To get a better idea of where some issues might be, I grouped games by genre (th
 
 ![genres](images/genres.png)  
 <sup> [III] Comparing the community, playtime, and Metacritic ratings by genre for the top 526 games</sup>  
+It looks like games where you tend to play a lot (e.g., massively multiplayer, strategy, RPGs) generally have more favorable playtime ratings (surprise!). Casual games or Indie games might be games where the emphasis is upon the artwork or music and do not require tens of hours to complete while still being great games ([e.g., Braid, one of my favorites](http://store.steampowered.com/app/26800/)). So rather than look at each game individually and create a custom playtime to explicit rating, maybe I could use the genres to help me out.  
+![genres_countries](images/genres_countries2.png)  
+<sup> [IV] The top 5 countries in my dataset and the top 5 most played genres</sup>  
+What jumps out with this image is that Action is probably way too generalized. With a little exploring, [Loves in a Dangerous Spacetime](http://store.steampowered.com/app/252110/) and [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) are both posted in the store under Action. A quick look at the store pages will tell you that these games are incredibly different. This leads into my future work section.
+
 
 ## Limitations
 * Including total 8,000 games resulted in 14.2 million user-game pairs
@@ -109,7 +114,7 @@ To get a better idea of where some issues might be, I grouped games by genre (th
 * Current genres pulled from the store are pretty vague and  
 too general. See below:  
 
-![genres_countries](images/genres_countries2.png)
+
 * I would like to use the community-chosen tags to created  
 better defined genres, factoring the order of the tags.  
 Currently, games like CS:GO and BattleBlock Theater are under  
