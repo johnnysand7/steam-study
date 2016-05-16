@@ -1,6 +1,6 @@
 # Steam User Recommender
 
-The initial idea for this project stemmed from trying online dating for the first time and learning a little about how it works during my time at Galvanize. Rather than ask users questions they could answer with varying degrees of fervor, this system would simply use the games users have already played and how much they have played them to create an explicit rating system to match similar users. The rough idea is that such a system could help people make new friends based on common gaming interests.
+The initial idea for this project stemmed from trying online dating for the first time and learning a little about how it works during my time at [Galvanize](http://www.galvanize.com/). Rather than ask users questions they could answer with varying degrees of fervor, this system would simply use the games users have already played and how much they have played them to create an explicit rating system to match similar users. The rough idea is that such a system could help people make new friends based on common gaming interests.
 ## Data Collection  
 
 ![img](/images/flow.png)  
