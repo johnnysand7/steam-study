@@ -98,7 +98,7 @@ To get a better idea of where some issues might be, I grouped games by genre (th
 It looks like games where you tend to play a lot (e.g., massively multiplayer, strategy, RPGs) generally have more favorable playtime ratings (surprise!). Casual games or Indie games might be games where the emphasis is upon the artwork or music and do not require tens of hours to complete while still being great games ([e.g., Braid, one of my favorites](http://store.steampowered.com/app/26800/)). So rather than look at each game individually and create a custom playtime to explicit rating, maybe I could use the genres to help me out.  
 ![genres_countries](images/genres_countries2.png)  
 <sup> [IV] The top 5 countries in my dataset and the top 5 most played genres</sup>  
-What jumps out with this image is that Action is probably way too generalized. With a little exploring, [Loves in a Dangerous Spacetime](http://store.steampowered.com/app/252110/) and [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) are both posted in the store under Action. A quick look at the store pages will tell you that these games are incredibly different. This leads into my future work section.
+What jumps out with this image is that Action is probably way too generalized. With a little exploring, [Lovers in a Dangerous Spacetime](http://store.steampowered.com/app/252110/) and [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) are both posted in the store under Action. A quick look at the store pages will tell you that these games are incredibly different. This leads into my future work section.
 
 
 ## Limitations
