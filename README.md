@@ -1,9 +1,9 @@
 # Steam User Recommender
 
-### Essential Workflow Image:
+The initial idea for this project stemmed from trying online dating for the first time and learning a little about how it works during my time at Galvanize. Rather than ask users questions they could answer with varying degrees of fervor, this system would simply use the games users have already played and how much they have played them to create an explicit rating system to match similar users. The rough idea is that such a system could help people make new friends based on common gaming interests.
+## Data Collection
 ![img](/images/flow.png)
-
-### Data Collection
+<sup> [I] General workflow image </sup>
 * Python class to collect 17-digit user IDs from my friends,  
 then their friends, and so on, using the Steam GetFriendList API  
 * Python class to collect for each user:
@@ -49,11 +49,13 @@ then their friends, and so on, using the Steam GetFriendList API
   * Deal with lists of dictionaries
 * Converted to SFrames to use GraphLab
 
-## Some Fun Numbers
+### Some Fun Numbers
 * 150,000 unique gamers, 8,000 unique games between them all
 * Reduced to 526 games after filtering by games with above  
 average playtime (summed over all 150k gamers)
-* 315 million hours / 36,000 years of playtime!
+* Reducing from 8,000 games to 526 games only reduced  
+total playtime from 345 million to 315 million hours.
+* One user had played Skyrim for 4,500 hours!
 
 ## Recommender
 To really capture user preferences based on playtime,  
@@ -82,6 +84,18 @@ in my next model. For now, below is a summary of its current form.
     * 3: 181min - 420min
     * 4: 421min - 900min
     * 5: Over 901min
+
+To get an idea of how my explicit playtime to rating compared  
+to some actual ratings, I collected meta critic and community   
+ratings for each game. I then ordered by my rating to get a  
+rough idea of what this looks like.
+![ratings](images/ratings.png)
+<sup> [II] Playtime rating is the clean curve. Looks like it does not match up too well...</sup>  
+To get a better idea of where some issues might be, I grouped  
+games by genre (the genre tag they are posted in the store  
+under) and averaged the reviews.
+![genres](images/genres.png)
+<sup> [III] Comparing the community, playtime, and Metacritic ratings by genre for the top 526 games</sup>  
 
 ## Limitations
 * Including total 8,000 games resulted in 14.2 million user-game pairs
