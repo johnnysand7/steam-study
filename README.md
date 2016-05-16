@@ -60,11 +60,7 @@ total playtime from 345 million to 315 million hours.
 * One user had played Skyrim for 4,500 hours!
 
 ## Recommender
-To really capture user preferences based on playtime,  
-more work needs to be done to to differentiate genres as well  
-*what* genres to choose for each game. The store page has  
-community-chosen genre tags, which I would like to implement  
-in my next model. For now, below is a summary of its current form.
+Initial model:
 * Dato GraphLab Factorization Recommender
   * Items: 526 most popular games, considering:
     * Game age
@@ -95,10 +91,13 @@ To get a better idea of where some issues might be, I grouped games by genre (th
 
 ![genres](images/genres.png)  
 <sup> [III] Comparing the community, playtime, and Metacritic ratings by genre for the top 526 games</sup>  
-It looks like games where you tend to play a lot (e.g., massively multiplayer, strategy, RPGs) generally have more favorable playtime ratings (surprise!). Casual games or Indie games might be games where the emphasis is upon the artwork or music and do not require tens of hours to complete while still being great games ([e.g., Braid, one of my favorites](http://store.steampowered.com/app/26800/)). So rather than look at each game individually and create a custom playtime to explicit rating, maybe I could use the genres to help me out.  
+It looks like games where you tend to play a lot (e.g., massively multiplayer, strategy, and RPGs) generally have more favorable playtime ratings (surprise!). Casual games or Indie games might emphasize artwork or music and do not require tens of hours to complete while still being great games ([e.g., Braid, one of my favorites](http://store.steampowered.com/app/26800/)). So rather than look at each game individually and create a custom playtime to explicit rating, maybe I could use the genres to help me out.   
+
 ![genres_countries](images/genres_countries2.png)  
 <sup> [IV] The top 5 countries in my dataset and the top 5 most played genres</sup>  
-What jumps out with this image is that Action is probably way too generalized. With a little exploring, [Lovers in a Dangerous Spacetime](http://store.steampowered.com/app/252110/) and [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) are both posted in the store under Action. A quick look at the store pages will tell you that these games are incredibly different. This leads into my future work section.
+What jumps out with this image is that Action is probably way too generalized. With a little exploring, [Lovers in a Dangerous Spacetime](http://store.steampowered.com/app/252110/) and [Counter-Strike: Global Offensive](http://store.steampowered.com/app/730/) are both posted in the store under Action.   
+An idea to try remedy this:
+* Each game has about 15-20 community-voted tags (something like 300 unique tags between the 526 games). The order matters since those have the most votes. I would like to try to use this in addition to maybe either the description of each game or the top few most useful reviews to create a TF-IDF matrix and see how many natural clusters (if any) appear. Then, use these clusters as genres, get a rough idea of what kinds of games fall into each, and create an explicit playtime to rating for each cluster.
 
 
 ## Limitations
@@ -110,11 +109,9 @@ What jumps out with this image is that Action is probably way too generalized. W
   trying to connect users (rather than recommend games),  
   this felt appropriate.
 * Very sparse profile summaries and information
-* Current model only works for the 150k people already collected.  
+* Current model only works for the 150k people already collected.
 * Current genres pulled from the store are pretty vague and  
-too general. See below:  
-
-
+too general.
 * I would like to use the community-chosen tags to created  
 better defined genres, factoring the order of the tags.  
 Currently, games like CS:GO and BattleBlock Theater are under  
@@ -128,6 +125,3 @@ Currently, games like CS:GO and BattleBlock Theater are under
 * The current app works with people already in the model, which is very  
 limited. However, it demonstrates how an idea like this could / would work:  
 copy your profile URL, and get links to similar players.
-
-## Explicit Ratings
-I wanted to really emphasize
