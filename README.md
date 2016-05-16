@@ -83,7 +83,7 @@ Initial model:
     * 4: 421min - 900min
     * 5: Over 901min
 
-To get an idea of how my explicit playtime to rating compared to some actual ratings, I collected meta critic and community ratings for each game. I then ordered by my rating to get a rough idea of what this looks like.  
+To get an idea of how my explicit playtime to rating compared to some actual ratings, I collected Metacritic and community ratings for each game. I then ordered by my rating to get a rough idea of what this looks like.  
 
 ![ratings](images/ratings.png)  
 <sup> [II] Playtime rating is the clean curve. Looks like it does not match up too well...</sup>  
